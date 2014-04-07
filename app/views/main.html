@@ -1,0 +1,23 @@
+<div class="container" ng-controller="EditorCtrl">
+  <h1>BDD Editor</h1>
+  
+  <h3>Current Scenario</h3>
+  <input type="text" ng-model="newLine"  size="30" placeholder="add new line here">
+  <button class="btn btn-success" ng-click="addLine()">
+    <span class="glyphicon glyphicon-plus-sign"></span>
+  </button>
+  <div ng-repeat="line in newScenario">{{line}}
+    <button class="btn btn-danger" ng-click="removeLine($index)">
+      <span class="glyphicon glyphicon-remove-sign"></span>
+    </button>
+  </div>
+  
+  <br/>
+  <button class="btn btn-primary" ng-click="addScenario()">Submit</button>
+
+  <h3>Existing Scenarios</h3>
+  <div ng-repeat="scenario in scenarios | filter:newLine">
+    <div ng-repeat="line in scenario" ng-click="select(line)">{{line}}</div>
+    <br/>
+  </div>
+</div>
