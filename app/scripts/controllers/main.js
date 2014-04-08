@@ -34,4 +34,4 @@ angular.module('bddEditApp')
 	  $scope.removeLine = function(index) {
 	    $scope.newScenario.splice(index, 1);
 	  };
-});
+  });
