@@ -44,4 +44,4 @@ Launch the app
 
 Release Notes
 ----
-Release notes are found [here](https://github.com/SteveSongVan/bddeditor/RELEASE.md)
+Release notes are found [here](https://github.com/SteveSongVan/bddeditor/blob/master/RELEASE.md)
